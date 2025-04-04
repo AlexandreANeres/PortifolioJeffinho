@@ -1,0 +1,74 @@
+.bytesized-regular { /* Fonte em 4Bits */
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#links { 
+    font-size: 30px;
+    width: 1500px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+#MyMenu { /* CSS do Título da Página */
+    font-size: 55px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 50px;
+
+    transition: color 0.7s;
+}
+
+#MyMenu:hover { /* CSS do Título da Página */
+    color: #e1e6d3;
+}
+
+a:link { /* Cor do Link*/
+    color: #fff5d6;
+}
+
+
+a:visited { /* Cor do Link depois de ser acessado*/
+    color: #fff5d6;
+}
+
+ul { /* Fundo bonitinho */
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+    background-color: #b1ccc4;
+
+    justify-content: center;
+}
+
+ul li { /* Fundo dos botões */
+    padding: 20px;
+    margin-right: 250px;
+
+    background-color: #4e5861;
+    transition: background-color 0.7s;
+    border-radius: 50px;
+}
+
+ul li a { /* Botões em si */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+ul li:hover { /* Transição do botão pro fundo */
+    background-color: #b1ccc4;
+}
+
+body {
+    background-color: #e1e6d3;
+    display: ruby-base-container;
+}
+
