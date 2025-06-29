@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet"
+        type="text/css" />
+
+</head>
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+
+
+<body>
+
+    <form onsubmit="return processar()">
+
+        <h3>Cadastre-se </h3>
+        <br>
+
+        <div class="formgroup">
+            <label for="nome" placeholder="nome completo…">Nome: </label>
+            <input type="text" id="nome" name="nome">
+        </div>
+
+        <br>
+
+        <div class="formgroup">
+            <label for="data_nascimento" type="date">Data de Nascimento: </label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+        </div>
+
+        <br>
+
+        <div class="formgroup">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="formgroup" id="habilidades">
+
+            <label>Habilidades: </label>
+
+            <label for="html">
+                <input type="checkbox" id="html" name="habilidades" value="HTML">HTML
+            </label>
+
+            <label for="css">
+                <input type="checkbox" id="css" name="habilidades" value="CSS">CSS
+            </label>
+
+            <label for="js">
+                <input type="checkbox" id="js" name="habilidades" value="JS">JavaScript
+            </label>
+
+            <label for="php">
+                <input type="checkbox" id="php" name="habilidades" value="PHP">PHP
+            </label>
+
+        </div>
+
+        <div class="formgroup">
+            <br>
+            <input type="color" id="color_selector" name="color_selector" value="#000000"> -> Qual é a sua cor favorita?
+            <br>
+        </div>
+
+        <br>
+
+        <div class="formgroup">
+            <label for="pais">País: </label>
+            <select id="pais" name="pais">
+                <option value="br">Brasil </option>
+                <option value="eua">EUA </option>
+                <option value="ru">Russia </option>
+                <option value="it">Itália </option>
+                <option value="pt">Portugal </option>
+            </select>
+        </div>
+
+        <div class="formgroup">
+            <label for="comentarios">Comentários: </label><br>
+            <textarea id="comentarios" name="comentarios"> </textarea>
+            <script>
+                new FroalaEditor('textarea');
+            </script>
+        </div>
+
+        <div class="formgroup">
+            <button class="btn" type="submit">Enviar </button>
+        </div>
+
+        <div id="feedback" class="mensagens-sucesso"></div>
+
+    </form>
+
+    <script>
+
+        function processar() {
+
+            let mensagens = []
+
+            let nome_elem = document.querySelector("#nome") //variável nome declarada
+            let data_nasc_elem = document.querySelector("#data_nascimento") // v2
+            let email_elem = document.querySelector("#email") // v3
+            let pais_elem = document.querySelector("#pais") // v4
+            let html = document.querySelector("#html").checked // v5.1
+            let css = document.querySelector("#css").checked // v5.2
+            let js = document.querySelector("#js").checked // v5.3
+            let php = document.querySelector("#php").checked // v5.4
+            let comentario_elem = document.querySelector("#comentarios") // v6
+
+            let comentario = comentario_elem.value.trim() //Tira os espaços desnecessários.
+            let nome = nome_elem.value.trim()
+            let data_nasc = data_nasc_elem.value.trim()
+            let email = email_elem.value.trim()
+            let pais = pais_elem.value.trim()
+
+            const nascimento = new Date(data_nasc)
+            const hoje = new Date()
+
+            let idade = hoje.getFullYear() - nascimento.getFullYear()
+
+            //nome v
+
+            if (nome === "") {
+                alert("O nome não pode estar vazio.")
+                return false
+            }
+            else {
+                alert("Olá, " + nome)
+            }
+
+            //data nasc v
+
+            if (data_nasc === "") {
+                alert("Você deve informar uma idade.")
+                return false
+            }
+
+            else {
+                if (idade < 18 || idade > 65) {
+                    alert("Você precisa ter mais de 18 anos ou menos de 65.")
+                    return false
+                }
+            }
+
+            //email v
+
+            if (!email.includes("@") || !email.includes(".com") || email === "") {
+                alert("Seu email deve conter um @ e \".com\".")
+                return false
+            }
+
+            //pais v
+
+            if (pais === "") {
+                alert("Você deve informar um país.")
+                return false
+            }
+
+            else {
+                if (!["br", "eua", "ru", "it", "pt"].includes(pais)) {
+                    alert("Você deve informar um dos países da lista.")
+                    return false
+                }
+            }
+
+            //habilitas v
+
+            if (!html && !css && !js && !php) {
+                alert("Você deve informar uma habilidade.")
+                return false
+            }
+
+            mensagens.push("Seus dados foram processados com sucesso!")
+            mensagens.push("Nome: " + nome)
+
+            document.querySelector("#feedback").innerText = mensagens.join("\n")
+            return false
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
