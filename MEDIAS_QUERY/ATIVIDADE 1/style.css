@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ametist-color: #9b59b6;
+    --sunflower-color: #f1c40f;
+    --carrot-color: #e67e22;
+    --tea-leaf: #7ADAA5;
+}
+
+body {
+    background: #e8e7e7;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    background: #fff;
+    /* realizar atividade */
+}
+
+.menu ul {
+    margin: 20px 10px 10px 10px;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.menu-responsivo {
+    padding: 10px;
+    font-size: 32px;
+    display: none;
+    /* realizar atividade */
+}
+
+.cards {
+    /* realizar atividade */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-container {
+    /* realizar atividade */
+    flex: 0 0 calc(25% - 15px); /*Professor, não entendi bem se era pra explicar ou nn, não tenho ninguém para com discutir sobre aqui em casa, então vou colocar minha conclusão msm: O senhor colocou um padding de 15 px, e a porcentagem 25% está referenciando a página e|ou o tamanho TOTAL do conteiner (Sem contar o padding aplicado), ou seja, os 1080px. Como existe esses 15px de padding, o tamanho das caixas vai sobrar 15px, e o card-container sem esse (-15px) vai descer, ficando 3 caixas por colunas. Isso deixaria o ngc bem feio*/
+    border: solid 1px;
+}
+
+.card {
+
+    max-width: 100%;
+    min-height: 200px;
+
+    text-align: center;
+    line-height: 150px;
+
+    background: var(--tea-leaf);
+    color: #fff;
+
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: var(--ametist-color);
+    }
+
+    .container {
+        width: 768px;
+    }
+
+    .card-container {
+        flex: 0 0 calc(33.33% - 13.33px);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: var(--sunflower-color);
+    }
+    .container {
+        width: 576px;
+        max-width: 100%;
+    }
+    .card-container {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background: var(--carrot-color);
+    }
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .card-container {
+        flex: 0 0 100%;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-responsivo {
+        display: block;
+    }
+}
