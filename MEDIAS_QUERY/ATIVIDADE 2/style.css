@@ -1,0 +1,82 @@
+body {
+    background-color: blue;
+    overflow: hidden;
+}
+
+#c1 {
+    background-color: rgb(255, 255, 255);
+}
+#c2 {
+    background-color: blue;
+    height: 300px;
+}
+#c3 {
+    background-color: rgb(255, 255, 255);
+}
+#c4 {
+    background-color: yellow;
+}
+#c5 {
+    background-color: red;
+}
+#c6 {
+    background-color: #ddd;
+}
+#c7 {
+    background-color: #ddd;
+}
+#c8 {
+    background-color: red;
+}
+#c9 {
+    background-color: #fff;
+}
+#c10 {
+    background-color: blue;
+}
+#c11 {
+    background-color: yellow;
+    height: 200px;
+}
+#c12 {
+    background-color: blue;
+}
+#c13 {
+    background-color: #fff;
+}
+#c14 {
+    background-color: #fff;
+}
+#c15 {
+    background-color: #fff;
+}
+#c16 {
+    background-color: #fff;
+}
+#c17 {
+    background-color: red;
+}
+#c18 {
+    background-color: #ddd;
+}
+#c19 {
+    background-color: yellow;
+}
+#c20 {
+    background-color: red;
+}
+#c21 {
+    height: 100px;
+}
+#c22 {
+    background-color: yellow;
+}
+#c23 {
+    background-color: red;
+}
+#c24 {
+    background-color: yellow;
+}
+#c25 {
+    background-color: #fff;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        [class^="col-"] {
+            border: solid 5px #000000;
+            padding: 10px;
+        }
+
+        .col-1 {flex: 1 1 calc(100% / 12);}
+        .col-2 {flex: 1 1 calc(100% / 6);}
+        .col-3 {flex: 1 1 calc(100% / 4);}
+        .col-4 {flex: 1 1 calc(100% / 3);}
+        .col-5 {flex: 1 1 calc(100% / 12 * 5);}
+        .col-6 {flex: 1 1 calc(100% / 2);}
+        .col-7 {flex: 1 1 calc(100% / 12 * 7);}
+        .col-8 {flex: 1 1 calc(100% / 12 * 8);}
+        .col-9 {flex: 1 1 calc(100% / 12 * 9);}
+        .col-10 {flex: 1 1 calc(100% / 12 * 10);}
+        .col-11 {flex: 1 1 calc(100% / 12 * 11);}
+        .col-12 {flex: 1 1 100%;}
+
+        @media (max-width: 767px){
+            body {
+                background-color: yellow;
+            }
+            .col-cel-1 {flex: 1 1 calc(100% / 12);}
+            .col-cel-2 {flex: 1 1 calc(100% / 6);}
+            .col-cel-3 {flex: 1 1 calc(100% / 4);}
+            .col-cel-4 {flex: 1 1 calc(100% / 3);}
+            .col-cel-5 {flex: 1 1 calc(100% / 12 * 5);}
+            .col-cel-6 {flex: 1 1 calc(100% / 2);}
+            .col-cel-7 {flex: 1 1 calc(100% / 12 * 7);}
+            .col-cel-8 {flex: 1 1 calc(100% / 12 * 8);}
+            .col-cel-9 {flex: 1 1 calc(100% / 12 * 9);}
+            .col-cel-10 {flex: 1 1 calc(100% / 12 * 10);}
+            .col-cel-11 {flex: 1 1 calc(100% / 12 * 11);}
+            .col-cel-12 {flex: 1 1 100%;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="row">
+
+        <div class="col-1 col-cel-12" id="c1"></div>
+        <div class="col-3 col-cel-12" id="c2"></div>
+        <div class="col-2 col-cel-12" id="c3"></div>
+        <div class="col-2 col-cel-12" id="c4"></div>
+        <div class="col-3 col-cel-12" id="c5"></div>
+        <div class="col-1 col-cel-12" id="c6"></div>
+
+        <div class="col-3 col-cel-12" id="c7"></div>
+        <div class="col-2 col-cel-12" id="c8"></div>
+        <div class="col-4 col-cel-12" id="c9"></div>
+        <div class="col-3 col-cel-12" id="c10"></div>
+
+        <div class="col-3 col-cel-12" id="c11"></div>
+        <div class="col-5 col-cel-12" id="c12"></div>
+        <div class="col-3 col-cel-12" id="c13"></div>
+        <div class="col-1 col-cel-12" id="c14"></div>
+
+        <div class="col-1 col-cel-12" id="c15" style="height: 300px;"></div>
+        <div class="col-1 col-cel-12" id="c16" style="height: 150px;"></div>
+        <div class="col-3 col-cel-12" id="c17" style="height: 150px;"></div>
+        <div class="col-4 col-cel-12" id="c18" style="height: 150px;"></div>
+        <div class="col-1 col-cel-12" id="c19" style="height: 300px;"></div>
+        <div class="col-2 col-cel-12" id="c20" style="height: 150px;"></div>
+
+        <div class="col-1 col-cel-12" id="c21"></div>
+        <div class="col-3 col-cel-12" id="c22"></div>
+        <div class="col-1 col-cel-12" id="c23"></div>
+        <div class="col-2 col-cel-12" id="c24"></div>
+        <div class="col-4 col-cel-12" id="c25"></div>
+    </div>
+    
+</body>
+</html>
