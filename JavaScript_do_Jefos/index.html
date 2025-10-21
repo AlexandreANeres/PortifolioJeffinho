@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Jeffinho</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link id="tema" rel="stylesheet" href="branco.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title_fire">GRANDE RELÓGIO DE LONDRES</h1>
+        <p class="cronometro" id="title">0</p>
+        <br>
+        <button class="somar">BUNTUM SOMAR</button>
+        <button class="tirar">BUNTUM TIRAR</button>
+    </div>
+
+    <div class="container">
+        <h1 class="title_fire" id="mod">OMGGGGGGGGGGGGGGGGG</h1>
+        <h1 class="title">Recarrega a página pra ver o que eu faço :P</h1>
+    </div>
+
+    <div class="container" id="custom">
+        <button class="novoElemento">CREATE</button>
+        <br>
+        <ol class="elementoEmQuestao">
+            <li>Baby | Justin Bieber</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <h1 class="title_fire">GERADOR DE NOME</h1>
+        <br>
+        <button class="gerarNome">gerar nome</button>
+        <br>
+        <p class="nome"></p>
+    </div>
+    <div class="container">
+        <img src="JeffParede.jpg" alt="jefo" width="50%" class="JeffParede" />
+    </div>
+    <div class="container">
+        <h1 class="title_fire">SORVETERIA</h1>
+        <form action="">
+            <input type="text" name="sabor" id="sabor" placeholder="escolher sabor" />
+            <input type="submit" value="solicitar" />
+        </form>
+        <br>
+        <h3 class="opiniao" id="title">MEU VEREDITO SOBRE SUA ESCOLHA:</h3>
+    </div>
+
+    <div class="container d-flex gap-2 align-items-center">
+        <div class="btn-group" role="group" aria-label="Tema">
+            <button type="button" class="btn btn-outline-dark rounded-circle preto" style="width:450px;height:450px;"
+                title="Tema escuro" aria-label="Tema escuro">
+                <i class="bi bi-moon-fill fs-4"></i>
+            </button>
+            <button type="button" class="btn btn-outline-warning rounded-circle branco"
+                style="width:450px;height:450px;" title="Tema claro" aria-label="Tema claro">
+                <i class="bi bi-sun-fill fs-4"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title_fire" style="font-size: 50px;">Eterno gira-gira de foto</h1>
+        <img src="" alt="gira-gira" class="imagem" width="300 px" />
+    </div>
+
+
+    <section class="container" id="cadastro-section" style="max-width:600px;">
+        <h2 class="title_fire" style="font-size: 50px;">Cadastro</h2>
+        <form id="cadastroForm" novalidate>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input id="nome" class="form-control" type="text" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E‑mail</label>
+                <input id="email" class="form-control" type="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input id="senha" class="form-control" type="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="confirmarSenha" class="form-label">Confirmar senha</label>
+                <input id="confirmarSenha" class="form-control" type="password" required>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="mostrarSenha">
+                <label class="form-check-label" for="mostrarSenha">Mostrar senha</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
+
+
+    <script>
+
+        // Texto Quântico
+
+        textoxterom = document.querySelector("#mod");
+        textoxterom.textContent = "WoW";
+        textoxterom.style.fontSize = (Math.random() * (100 - 30) + 200) + "px";
+
+        // Cronometro
+
+        buntaum = document.querySelector(".somar");
+        tiraur = document.querySelector(".tirar");
+        botaoCriar = document.querySelector(".novoElemento")
+
+        buntaum.addEventListener('click', adicionar);
+        tiraur.addEventListener('click', tirar)
+        botaoCriar.addEventListener('click', adicionarItem)
+
+        let paragrafo = document.querySelector(".cronometro");
+        let memoria = 1;
+
+        function adicionar() {
+            paragrafo.textContent = memoria;
+            memoria++;
+        }
+
+        function tirar() {
+            memoria--;
+            paragrafo.textContent = memoria;
+        }
+
+        // Lista
+
+        let elementoEmQuestao = document.querySelector(".elementoEmQuestao");
+        let memoriaNovoElemento = 2;
+
+        let letras = ['Oh, woah', 'Oh, woah', 'Oh, woah', 'Oh, woah', 'Oh, woah', 'You know you love me, i know you care', 'Just shout whenever, and Ill be there', 'You are my love, you are my heart', 'And we will never, ever, ever be apart.', 'Are we an item? Girl, quit playing!', 'We , Said theres another and looked right in my eyes', 'My first love broke my heart for the first time', 'And I was like', 'Baby, baby, baby, ooh, like', 'Baby, baby, baby, no, like', 'Baby, baby, baby, ooh', 'Thought you d always be mine, mine', 'Baby, baby, baby, ooh, like', 'Baby, baby, baby, no, like', 'Baby, baby, baby, ooh', 'Thought you d always be mine, mine', 'Oh, for you, I would have done whatever', 'And I just cant believe we aint together', 'And I wanna play it cool, but Im losing you', 'Ill buy you anything, Ill buy you any ring', 'And Im in pieces, baby, fix me', 'And just shake me till you wake me from this bad dream', 'Im going down, down, down, down', 'And I just cant believe my first love wont be around', 'And Im like', 'Baby, baby, baby, ooh, like', 'Baby, baby, baby, no, like', 'Baby, baby, baby, ooh', 'Thought you d always be mine, mine', 'Baby, baby, baby, ooh, like', 'Baby, baby, baby, no, like', 'Baby, baby, baby, ooh', 'Thought you d always be mine, mine'];
+
+        function adicionarItem() {
+            let masqueico = document.createElement("li");
+            masqueico.textContent = letras[memoriaNovoElemento];
+            elementoEmQuestao.appendChild(masqueico);
+            memoriaNovoElemento++;
+            let caixa = document.querySelector("#custom");
+            //IA
+            if (caixa) {
+                const currentHeight = caixa.clientHeight || parseInt(window.getComputedStyle(caixa).height, 10) || 0;
+                caixa.style.height = (currentHeight + 25) + "px";
+            } //Isso aqui foi ideia da IA, não sabia como aumentar o tamanho da caixa com minhas capacidades intelectuais :(
+        }
+
+        // Gerar Nomes
+
+        const titles = [
+            "Senhor",
+            "Lorde",
+            "Rei",
+            "Capitão",
+            "Príncipe",
+            "Sábio",
+            "Guardião"
+        ];
+        const names = [
+            "Frodo",
+            "Samwise",
+            "Gandalf",
+            "Aragorn",
+            "Legolas",
+            "Gimli",
+            "Boromir",
+            "Bilbo",
+            "Elrond",
+            "Galadriel"
+        ];
+        const classes = [
+            "Hobbit",
+            "Mago",
+            "Guerreiro",
+            "Arqueiro",
+            "Ranger",
+            "Anão",
+            "Elfo"
+        ];
+        const locations = [
+            "Condado",
+            "Valfenda",
+            "Gondor",
+            "Rohan",
+            "Mordor",
+            "Lothlórien",
+            "Erebor"
+        ];
+
+        botaoNome = document.querySelector(".gerarNome");
+
+        function gerarNome() {
+            let title = titles[Math.floor(Math.random() * titles.length)];
+            let name = names[Math.floor(Math.random() * names.length)];
+            let classe = classes[Math.floor(Math.random() * classes.length)];
+            let location = locations[Math.floor(Math.random() * locations.length)];
+
+            let nomeCompleto = title + " " + name + ", o " + classe + " de " + location;
+
+            let paragrafoNome = document.querySelector(".nome");
+            paragrafoNome.textContent = nomeCompleto;
+        }
+
+        botaoNome.addEventListener("click", gerarNome);
+
+        const jeff = document.querySelector(".JeffParede");
+
+        if (jeff) {
+            jeff.addEventListener("mouseenter", function () {
+                console.log("oi, eu sou o professor Jeff em uma parede.");
+            });
+
+            jeff.addEventListener("mouseleave", function () {
+                console.log("já vai??? Olha mais a minha parede :(");
+            });
+
+            jeff.addEventListener("mousemove", function () {
+                console.log("isso, explore a minha parede :)");
+            });
+
+            jeff.addEventListener("click", function () {
+                console.log("nada melhor do que tocar a minha parede.");
+            });
+        }
+
+        // Temas
+
+        const botaoPreto = document.querySelector(".preto");
+        const botaoBranco = document.querySelector(".branco");
+        const temaEl = document.getElementById("tema");
+
+        //IA
+        function setTema(href) {
+            if (!temaEl) {
+                console.error("Elemento #tema não encontrado no head.");
+                return;
+            }
+            console.log("Trocando tema para:", href);
+            temaEl.setAttribute("href", href + "?v=" + Date.now());
+        } //Se der algum erro -> IA, fiz para o professor receber a mensagem certinho
+
+        if (botaoPreto) {
+            botaoPreto.addEventListener("click", function () {
+                setTema("preto.css");
+            });
+        } else {
+            console.warn("Botão .preto não encontrado.");
+        }
+
+        if (botaoBranco) {
+            botaoBranco.addEventListener("click", function () {
+                setTema("branco.css");
+            });
+        } else {
+            console.warn("Botão .branco não encontrado.");
+        }
+
+        //Sorvete
+
+        const formulario = document.querySelector("form");
+        const inputSabor = document.querySelector("#sabor");
+        const op = document.querySelector(".opiniao");
+
+        formulario.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let sabor = inputSabor.value;
+            if (sabor == "chocolate") {
+                op.textContent = "A escolha certa para quem busca um momento amargo";
+            } else if (sabor == "baunilha") {
+                op.textContent = "O simples as vezes é melhor do que o complicado";
+            } else if (sabor == "misto") {
+                op.textContent = "Quântico.";
+            } else {
+                op.textContent = "Não registrei esse sabor no meu banco de dados :(";
+            }
+        });
+
+        // Gira-Gira
+
+        const fotos = [
+            "https://picsum.photos/200/300?grayscale",
+            "https://picsum.photos/id/19/2500/1667",
+            "https://picsum.photos/id/239/600/400",
+            "https://picsum.photos/id/240/600/400",
+        ];
+
+        let indice = 0;
+
+        function trocarImagem() {
+            const image = document.querySelector(".imagem");
+            image.style.width = "30vw";
+            image.style.height = "40vh";
+            image.src = fotos[indice];
+            indice = indice + 1;
+            if (indice > 3) {
+                indice = 0;
+            }
+            setTimeout(trocarImagem, 500);
+        }
+        trocarImagem();
+
+        // Formulário
+
+        (function () {
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const senhaRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+            const form = document.getElementById("cadastroForm");
+            const checkboxMostrar = document.getElementById("mostrarSenha");
+            const campoSenha = document.getElementById("senha");
+            const campoConfirmar = document.getElementById("confirmarSenha");
+
+            if (form) {
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    const nome = document.getElementById("nome").value.trim();
+                    const email = document.getElementById("email").value.trim();
+                    const senha = campoSenha.value;
+                    const confirmarSenha = campoConfirmar.value;
+
+                    let valido = true;
+
+                    if (nome.length < 3) {
+                        alert("O campo nome deve ter ao menos 3 caracteres.");
+                        valido = false;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        alert("E-mail inválido.");
+                        valido = false;
+                    }
+
+                    if (!senhaRegex.test(senha)) {
+                        alert("Senha inválida. Deve ter 8+ caracteres, pelo menos 1 letra maiúscula e 1 caractere especial.");
+                        valido = false;
+                    }
+
+                    if (senha !== confirmarSenha) {
+                        alert("Senha e confirmação não conferem.");
+                        valido = false;
+                    }
+
+                    if (valido) {
+                        alert("Cadastro validado com sucesso.");
+                        form.reset();
+                    }
+                });
+            }
+
+            if (checkboxMostrar && campoSenha && campoConfirmar) {
+                checkboxMostrar.addEventListener("change", () => {
+                    const mostrar = checkboxMostrar.checked;
+                    const tipo = mostrar ? "text" : "password";
+                    campoSenha.type = tipo;
+                    campoConfirmar.type = tipo;
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>

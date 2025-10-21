@@ -1,0 +1,67 @@
+:root{
+    --bg: #ffffff;
+    --card: #f7f7f7;
+    --text: #111111;
+    --muted: #6b6b6b;
+    --accent: #c43b3b;
+    --btn-bg: #ffffff;
+    --btn-border: #dddddd;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing:antialiased;
+}
+
+.container{
+    background: var(--card);
+    color: var(--text);
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.title_fire{
+    color: var(--accent);
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.cronometro{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--text);
+    margin: 0;
+}
+
+button{
+    background: var(--btn-bg);
+    color: var(--text);
+    border: 1px solid var(--btn-border);
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.nome, .elementoEmQuestao, .contImg, .JeffParede {
+    color: var(--text);
+}
+
+.JeffParede{
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display: block;
+}
+
+.elementoEmQuestao{
+    color: var(--muted);
+}
