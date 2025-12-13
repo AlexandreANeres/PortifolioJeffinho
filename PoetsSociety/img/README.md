@@ -1,0 +1,1 @@
+Porção das imagens :)
