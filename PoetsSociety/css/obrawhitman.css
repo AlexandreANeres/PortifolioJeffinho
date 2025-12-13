@@ -1,0 +1,157 @@
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: 'PT Serif', serif;
+    overflow-x: hidden;
+}
+
+.work-title {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    border: 1px solid #c0c0c0;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.poem-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.author-citation {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: right;
+    color: #888;
+}
+
+.author-portrait {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    filter: grayscale(100%);
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a0a0a0;
+}
+
+.divider {
+    border-top: 1px solid #444; 
+    opacity: 1;
+    margin: 40px 0;
+}
+
+.section-subtitle {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 2.5rem;
+    color: #f5f2ea;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.work-banner-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.work-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.work-banner-container:hover .work-image {
+    transform: scale(1.01);
+    filter: grayscale(20%);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    opacity: 0.8;
+}
+
+.bio-text {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-topic {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.bio-text ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.bio-text li {
+    margin-bottom: 10px;
+}
+
+.bottom-nav-container {
+    background-color: #1e1e1e;
+    border-top: 1px solid #444;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.nav-links-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #aaa;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}

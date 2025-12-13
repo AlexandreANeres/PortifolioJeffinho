@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edf0f2; /* A cor cinza clarinho do fundo */
+    font-family: "PT Serif", serif;
+    color: #222220;
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita rolagem lateral */
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+}
+
+.container-negro {
+    width: 100vw;
+    height: auto;
+
+    margin: 0;
+}
+
+.col-12-meio {
+    margin-top: 2vh;
+    margin-left: 1vh;
+    padding: 3vh;
+
+    width: 96vw;
+    height: 30vh;
+    border-radius: 1%;
+
+    background-color: #e8e6e0;
+    margin-bottom: 1vh;
+}
+
+.col-12 {
+    margin-top: 1vh;
+    margin-left: 1vh;
+    padding: 3vh;
+
+    width: 96vw;
+    height: 108vh;
+    border-radius: 1%;
+
+    background-color: #e8e6e0;
+}
+
+.col-12-negro {
+    padding: 3vh;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_titulo {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+
+    color: #222220;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+
+    margin-top: 1vh;
+    margin-left: 1vh;
+
+
+    width: 96vw;
+    border-radius: 1%;
+
+    background-color: #edf0f2;
+
+    text-align: center;
+}
+
+.autor {
+    font-family: "PT Serif", serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.poema-texto {
+    font-family: "Dancing Script", cursive; 
+    font-size: 34px;
+    color: #222220;
+    line-height: 1.4;
+}
+
+
+.titulo-caligrafia {
+    font-family: "Eagle Lake", cursive;
+    font-size: 80px;
+    font-weight: 400;
+    color: #222220;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.poema-card {
+    background-color: transparent;
+    border: 1px solid #aaa; 
+    border-radius: 50px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1600px; 
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.link-poetas {
+    color: #222220;
+    font-style: none;
+
+    transition: all 1.0s ease;
+}
+
+.link-poetas:hover {
+    color: #edf0f2;
+    font-style: none;
+    scale: 1.01;
+}
+
+.linha-header {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+}
+
+#banner-principal {
+    width: 100%;
+}
+
+#meia-lua {
+    max-width: 50vw;
+    height: auto;
+    position: absolute;
+}
+
+#introducao {
+    max-width: 50vw;
+    height: 25vh;
+}
+
+.conteudo {
+    margin-left: 10vh;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: center;
+    color: #f5f2ea;
+}
+
+.btn-hear {
+    width: 80%;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #8c866c;
+    color: #fff;
+    border-radius: 999px;
+    padding: 10px 50px;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+
+    transition: background-color 0.35s ease, transform 0.35s ease;
+}
+
+.btn-hear2 {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #222220;
+    color: #fff;
+    border-radius: 999px;
+    padding: 10px 50px;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    margin-bottom: 5vh;
+
+    transition: background-color 0.35s ease, transform 0.35s ease;
+}
+
+.btn-hear:hover {
+    background-color: #7a755f;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-hear2:hover {
+    background-color: #7a755f;
+    color: #fff;
+    transform: translateY(-2px);
+}
